@@ -1,8 +1,10 @@
+-----------post----------------
 1实例化
 2populate property
 3如实现BeanNameAware执行setBeanName
 4如实现BeanFactoryAware/ApplicationContextAware执行setBeanFactory/setApplicationContext
 5如存在类实现BeanPostProcessor,执行postProcessBeforeInitialization
+-----------init------------------
 6如实现InitializingBean执行afterPropertiesSet
 7执行init-method in xml
 8对应5,执行postProcessAfterInitialization

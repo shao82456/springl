@@ -1,4 +1,4 @@
-import bean.BeanOne;
+import entity.BeanOne;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -9,6 +9,6 @@ public class Main {
         beanOne.doSomething();
 //        ((AnnotationConfigApplicationContext) ioc).close();
         System.out.println(beanOne.getMessage());
-
+        ((AnnotationConfigApplicationContext) ioc).close();
     }
 }
